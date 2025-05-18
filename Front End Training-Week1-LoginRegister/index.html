@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Aksub - Week 1</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="container">
+      <div class="register" id="registerForm">
+        <div class="header">
+          <p>Create your account</p>
+          <h5>Let's get started with your 30 days free trial</h5>
+        </div>
+        <form action="#">
+          <div class="input-box">
+            <label for="name">Name<span style="color: red;">*</span></label>
+            <input type="text" id="name" name="name" placeholder="johndoe"/>
+            <div class="error">
+              <p>This field can't be empty</p>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="email">Email<span style="color: red;">*</span></label>
+            <input type="text" id="email" name="email" placeholder="johndoe@gmail.com"/>
+            <div class="error">
+              <p>This field can't be empty</p>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="password">Password<span style="color: red;">*</span></label>
+            <input type="password" id="password" name="password" placeholder="*******"/>
+            <div class="error">
+              <p>This field can't be empty</p>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="confirm-password">Retype Password<span style="color: red;">*</span></label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="*******">
+            <div class="error">
+              <p>This field can't be empty</p>
+            </div>
+          </div>
+          <div class="agree-to-all-terms">
+              <input type="checkbox" id="agree-to-all-terms">
+              <label>I agree to all term, privacy policy and fees</label>
+          </div>
+          <button type="submit">Sign Up</button>
+          <div class="logreg-link">
+            <p>Already have an account? <a href="#" onclick="showLogin()" class="login-link">Log in</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="login" id="loginForm">
+        <div class="header">
+          <p>Log in to your account</p>
+          <h5>Enter your credentials to login to your account</h5>
+        </div>
+        <form action="#">
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input type="text" id="login-email" name="email" placeholder="johndoe@gmail.com"/>
+            <div class="error">
+              <p>This field can't be empty</p>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input type="password" id="login-password" name="password" placeholder="*******"/>
+            <div class="error">
+              <p>This field can't be empty</p>
+            </div>
+          </div>
+          <button type="submit">Login</button>
+          <div class="logreg-link">
+            <p>Don't have an account? <a href="#" onclick="showRegister()" class="signin-link">Create an account</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

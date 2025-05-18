@@ -1,0 +1,122 @@
+body {
+    font-family: 'Hanken Grotesk';
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header p {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: -15px;
+}
+
+.header h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    color: #878787;
+}
+
+.header {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #EBEBEB;
+    outline: none;
+    padding: 16px 24px;
+}
+
+
+.agree-to-all-terms label {
+    color: #878787;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.agree-to-all-terms {
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px 200px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #151515;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.logreg-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #878787;
+}
+
+.logreg-link a {
+    color: #FF954A;
+}
+
+.register {
+    display: block;
+}
+
+.login {
+    display: none;
+}
+.error {
+    color: #FF6161;
+    font-size: 14px;
+    font-weight: 500;
+    display: none;
+    margin-bottom: -20px;
+}
+
+.error-secondary p {
+    color: #878787;
+}
+
+.input-box input.error-border {
+    border: 2px solid #FF6161;
+}
+
+.input-box input.error-border-2 {
+    border: 2px solid #EBEBEB;
+}
